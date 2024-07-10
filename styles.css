@@ -911,81 +911,127 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .emoji-circle {
-        width: 30px; /* Ukuran lebih kecil untuk layar yang sangat kecil */
-        height: 30px; /* Ukuran lebih kecil untuk layar yang sangat kecil */
-        line-height: 30px; /* Atur tinggi garis agar emoji berada di tengah */
-        font-size: 18px; /* Ukuran font lebih kecil untuk emoji */
+   .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content, .hero-image {
+        margin-bottom: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .icons {
+        margin-top: 10px;
     }
 
-    .emoji-feedback {
-        width: 90%; /* Sesuaikan lebar container emoji pada layar sangat kecil */
-        gap: 5px; /* Sesuaikan jarak antar emoji */
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .hero h1 {
-        font-size: 28px;
-        line-height: 36px;
+    .forum-content {
+        flex-direction: column;
+    }
+    .forum-text, .forum-image {
+        margin-bottom: 20px;
     }
 
-    .hero p {
-        font-size: 16px;
-        line-height: 24px;
+    .talent-cards, .package-cards {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .services h2 {
-        font-size: 24px;
+    .own-diary {
+        padding: 20px 10px;
     }
-
-    .services p {
-        font-size: 14px;
-    }
-
-    .forum h2 {
-        font-size: 22px;
-    }
-
-    .forum p {
-        font-size: 16px;
-    }
-
-    .talent h2 {
-        font-size: 24px;
-    }
-
-    .packages h2 {
-        font-size: 20px;
-    }
-
-    .package-card h3 {
-        font-size: 16px;
-    }
-
-    .package-card p {
-        font-size: 12px;
+    
+    .own-diary-content {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
     }
 
     .own-diary h2 {
-        font-size: 22px;
+        font-size: 24px;
     }
-
+    
     .own-diary p {
         font-size: 14px;
     }
+    
+    .own-diary .write-now {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
 
-    .feeling-today-section h3 {
-        font-size: 18px;
+    .own-diary-image img {
+        width: 90%; /* Adjust the image width for smaller screens */
+    }
+
+    .feeling-today-section h3,
+    .encouragement-section h3 {
+        font-size: 20px;
     }
 
     .quotes blockquote {
         font-size: 12px;
     }
 
+    .emoji-circle {
+        width: 40px; /* Ukuran lebih kecil untuk layar lebih kecil */
+        height: 40px; /* Ukuran lebih kecil untuk layar lebih kecil */
+        line-height: 40px; /* Atur tinggi garis agar emoji berada di tengah */
+        font-size: 20px; /* Ukuran font lebih kecil untuk emoji */
+    }
+
+    .emoji-feedback {
+        width: 70%; /* Sesuaikan lebar container emoji pada layar kecil */
+        gap: 10px; /* Sesuaikan jarak antar emoji */
+    }
+
+    .about-us-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-text {
+        text-align: center;
+    }
+
     .about-us-text h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .about-us-text p {
         font-size: 14px;
+    }
+
+    .about-us-text button {
+        width: 60%;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .newsletter-input input,
+    .newsletter-input button {
+        width: 100%;
     }
 }
